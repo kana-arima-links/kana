@@ -205,6 +205,24 @@
             opacity: 1;
         }
 
+        .viewMore {
+            display: inline-block;
+            color: white;
+        }
+        
+        .coder::after {
+            content: '';
+            width: 0px;
+            height: 2px;
+            display: block;
+            background: white;
+            transition: 200ms;
+        }
+        
+        .coder:hover::after {
+            width: 100%;
+        }
+
         .body div {
             display: flex;
             flex-direction: column;
